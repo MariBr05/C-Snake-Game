@@ -1,0 +1,5 @@
+# Ignore compiled binaries and object files
+*.o
+snake_game
+*.exe
+.vscode/
