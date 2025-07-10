@@ -29,9 +29,10 @@ class SnakeGame{
 
     public:
 
-    bool isGameOver(){return gameOver;}
+    //constructor
+    SnakeGame();
 
-    void Setup();//
+    bool isGameOver(){return gameOver;}
     void Print();//print the board
     void Input();//read input
     void Logic();//check the rules

@@ -2,8 +2,8 @@
 #include <ncurses.h>
 #include <algorithm>
 
-void SnakeGame :: Setup(){
 
+SnakeGame :: SnakeGame(){
     initscr();              // Start ncurses
     noecho();               // Don't echo typed characters
     curs_set(FALSE);        // Hide cursor
@@ -33,6 +33,8 @@ void SnakeGame :: Setup(){
     tailLength = 0;
     snakeTailX.resize(100);
     snakeTailY.resize(100);
+
+    Start();
 }
 
 //for print, since we are using ncurse you cant just use cout, must use ncurses own fucntions
@@ -191,7 +193,6 @@ void SnakeGame :: Logic(){
 
 
 void SnakeGame :: Start(){
-    Setup();
    
     while(!gameOver){
         Print();
